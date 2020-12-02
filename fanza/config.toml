@@ -140,11 +140,11 @@ job = 6
 ## 这个值是跟同时下载数量 {job} 相关的
 ## 每个分片通常是3MB，要是这个值是32的话，缓冲区会高达 3MB * 32 = 96MB
 ## -> 默认值：0 是 2 * {job} + {job} / 2 , 16 job 设置 buffer 为192
-buffer = 72
+buffer = 192
 ## timeout <1-99>; 单次请求超时时间的秒数
 timeout = 5
 ## retry <0-99>; 最大尝试次数
-retry = 8
+retry = 99
 ## retry <0-MAX_INT>; HTTP 404错误的最大尝试次数
 retry_on_404 = 15
 ## backoff <0.0-BACKOFF_MAX>; 退避系数
