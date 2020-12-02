@@ -1,12 +1,12 @@
 {
-    "name": "ikoa-web",
+    "name": "ik",
     "description": "This app runs iKOA on heroku",
     "keywords": [
         "heroku",
-        "iKOA",
+        "ik",
         "google drive"
     ],
-    "repository": "https://github.com/mason1901/ikoa-web",
+    "repository": "https://github.com/a132395/ikoa-web",
     "env": {
         "TEAM_DRIVE_ID": {
             "description": "the ID of the team drive"
@@ -53,7 +53,7 @@
         },
         "OUTPUT_FILENAME": {
             "description": "Choose a format to naming the downloaded file, pid or cid or num.",
-            "value": "cid"
+            "value": "num"
         }
 
     },
