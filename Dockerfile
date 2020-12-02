@@ -35,7 +35,7 @@ RUN apk update && apk add --no-cache \
     if [[ ! -f /usr/bin/python ]]; then ln -s /usr/bin/python3 /usr/bin/python; fi && \
     mkdir -p glibc-${GLIBC_VERSION} /usr/glibc && \
     ln -s /bin/bash /usr/bin/bash && \
-    curl -sL http://mirrors.aggregate.org/archlinux/core/os/${GLIB_ARCH}/glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -o glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz && \
+    curl -sL http://mirror.datto.com/archlinux/pool/packages/glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -o glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz && \
     tar xf glibc-${GLIB_VERSION}-${GLIB_ARCH}.pkg.tar.xz -C glibc-${GLIBC_VERSION} && \
     mv tmp/ld.so.conf /etc/ld.so.conf && \
     cp -a glibc-${GLIBC_VERSION}/usr /usr/glibc/ && \
