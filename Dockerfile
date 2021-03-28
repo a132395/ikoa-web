@@ -12,7 +12,7 @@ ADD ./config/heroku-exec.sh /etc/profile.d/
 
 RUN apk update && apk add --no-cache \
     tar \
-    xz-utils \
+    xz \
     procps \
     findutils \
     grep  \
