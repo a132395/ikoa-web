@@ -8,13 +8,7 @@
     ],
     "repository": "https://github.com/a132395/ikoa-web",
     "env": {
-        "TEAM_DRIVE_ID": {
-            "description": "the ID of the team drive"
-        },
-        "SA_JSON_1": {
-            "description": "follow the tips and FAQ in README.md"
-        },
-        "SA_JSON_2": {
+        "RCLONE_CONFIG": {
             "description": "follow the tips and FAQ in README.md"
         },
         "RCLONE_DESTINATION": {
