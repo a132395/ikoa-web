@@ -6,7 +6,7 @@ TaskId=$3
 TAG=$4
 IFS="," read -r -a idList <<< "$ID"
 idListLen=${#idList[@]}
-RcloneConf="rclone_1.conf"
+RcloneConf="rclone.conf"
 DownloadCount=0
 cd /app/fanza || exit
 codeQuota=$(./iKOA -E cid:118abp12345 | grep -oP '(?<=剩余\s)[0-9]+(?=\s次)')
@@ -126,12 +126,6 @@ for i in "${!idList[@]}"; do
             rc=$?
             if [[ $rc -ne 7 ]]; then
                 break
-            else
-                if [[ $RcloneConf == "rclone_1.conf" ]]; then
-                    RcloneConf="rclone_2.conf"
-                else
-                    RcloneConf="rclone_1.conf"
-                fi
             fi
             sleep 10
         done
