@@ -1,6 +1,11 @@
 # ikoa-web
 **ikoa-web** is a third-party app which helps you using **iKOA** more easily.
 
+### rclone 设置格式
+[DRIVE]
+drive=
+...
+
 ### Features:
 * The docker image(186MB in total) is based on i386/alpine.
 * Auto upload to google drive after download finished.
